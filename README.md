@@ -1,5 +1,5 @@
 # Geant4
 
-## cd bulid
-## cmake ..
-## make
+  - cd bulid
+  - cmake ..
+  - make
