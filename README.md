@@ -1,2 +1,5 @@
 # Geant4
-Geant4
+
+## cd bulid
+## cmake ..
+## make
