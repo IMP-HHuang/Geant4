@@ -1,0 +1,8 @@
+# Macro file for gamma
+
+/run/initialize
+
+# gamma 0.662 MeV 
+/gun/particle gamma
+/gun/energy 0.662 MeV
+

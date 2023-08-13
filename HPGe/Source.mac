@@ -1,0 +1,19 @@
+/gps/particle ion
+/gps/ion 11 22 0 0 //质子数 质量数  电荷数  能量（MeV）
+#/gps/ang/type iso
+/gps/energy 0 MeV
+/gps/position 0. 0. 80 mm
+#/gps/direction 0 0 -1
+
+#输出当前源的属性
+#/gps/source/print
+
+
+#/gun/particle ion
+#/gun/ion 11 22 0 0 //质子数 质量数  电荷数  能量（MeV）
+#/gun/pos/centre 0. 0. 10. mm
+#/gun/ang/type iso
+
+
+#/run/printProgress 10000
+#/run/beamOn 10
