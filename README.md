@@ -13,5 +13,7 @@
 ## 一些模拟经验
   - G4UniformRand() 函数给的随机数是从随机数表中直接读取的，不改变CLHEP:HepRandom::setTheSeed(seed)的seed，每次获得的随机数是一样的，多个文件同时模拟的时候要注意。
   - 粒子直接发射到材料边界谁都不会管
+  - new G4ParticleGun(n_particle)
+    - 这里的n_particle是每个事件产生几个粒子，注意是相同的粒子，慎用！！！
   - Physics list
     - G4EmstandardPhysics_option4 : 580 MeV 以下的alpha粒子模拟时，不会考虑次级电子
