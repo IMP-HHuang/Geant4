@@ -5,4 +5,4 @@
 # GetParentId
   - step->GetTrack()->GetParentID()
     - primary particle : return 0
-    - Secondary particle : retuen 1   
+    - Secondary particle : retuen (>1 value)   
