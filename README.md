@@ -18,3 +18,5 @@
     - 这里的n_particle是每个事件产生几个粒子，注意是相同的粒子，慎用！！！
   - Physics list
     - G4EmstandardPhysics_option4 : 580 MeV 以下的alpha粒子模拟时，不会考虑次级电子
+  - step->GetTrack()->GetParentID()
+    - Geant4版本不一样，ParentID会有区别，注意检查（别白跑了！！） 
