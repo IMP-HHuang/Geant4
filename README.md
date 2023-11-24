@@ -10,6 +10,7 @@
   -  /run/beamOn Number
   -  exit(必须正常退出，否则root文件无法保存)
 ## [Forum](https://geant4-forum.web.cern.ch/) 
+## [code](https://github.com/Geant4/geant4/tree/master/source/event/src)
 ## [Function](./Function/README.md)
 ## 一些模拟经验
   - G4UniformRand() 函数给的随机数是从随机数表中直接读取的，不改变CLHEP:HepRandom::setTheSeed(seed)的seed，每次获得的随机数是一样的，多个文件同时模拟的时候要注意。
