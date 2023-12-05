@@ -20,4 +20,11 @@
   - Physics list
     - G4EmstandardPhysics_option4 : 580 MeV 以下的alpha粒子模拟时，不会考虑次级电子
   - step->GetTrack()->GetParentID()
-    - Geant4版本不一样，ParentID会有区别，注意检查（别白跑了！！） 
+    - Geant4版本不一样，ParentID会有区别，注意检查（别白跑了！！）
+   - GPS重新设置放射源的位置
+```cpp
+  G4GeneralParticleSourceData* GPSData = G4GeneralParticleSourceData::Instance();
+  G4SingleParticleSource* thisSrc = GPSData->GetCurrentSource(0);
+  G4SPSPosDistribution* thisPosDis = thisSrc->GetPosDist();
+  thisPosDis->SetCentreCoords(G4ThreeVector(Px, Py, Pz));
+```
