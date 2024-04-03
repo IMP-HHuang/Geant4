@@ -28,3 +28,7 @@
   G4SPSPosDistribution* thisPosDis = thisSrc->GetPosDist();
   thisPosDis->SetCentreCoords(G4ThreeVector(Px, Py, Pz));
 ```
+  - fParticleGun->GeneratePrimaryVertex(anEvent);
+    - 这里只是把Gun的信息存下来，模拟的时候发射，不是直接在这发射的
+    - 所有信息存完之后才会发射，不要想拿相同Event的上一个粒子的信息设置给下一个粒子的某个属性！！！（目前的想法是把多粒子发射放在不同的Event里来实现）
+    - 发射的顺序是先存后发，即最后存入的粒子最先发射，模拟衰变的时候要注意！！！
